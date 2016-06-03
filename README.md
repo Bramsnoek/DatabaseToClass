@@ -15,7 +15,7 @@ User:
 
 Class Information:
 Here you can fill in the namespace of your project.
-   You can select a language (at the moment only C#) I want to add more languages in the future..
+   You can select a language (at the moment only C#) I want to add more languages in the future.
    Also you can select the type of properties you want:
        Fields, the columns of your tables will be generated as fields.
        Properties, the columns of your tables will be generated as properties.
