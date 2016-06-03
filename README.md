@@ -5,14 +5,14 @@ Be aware that this program was made for personal use, so the code may not be the
 How the program works:
 
 Class Directory:
--- First you select a class directory, this will be the location where the generated classes with be located.
+First you select a class directory, this will be the location where the generated classes with be located.
 
 Database Information:
--- Connection:
-  -- You select an Ip Address and a Service Name, these will be the connection info to the Oracle Database
+Connection:
+  You select an Ip Address and a Service Name, these will be the connection info to the Oracle Database
 
--- User:
-  -- Here you fill in an Username and a Password, these will function as the login details of your Oracle Database
+User:
+  Here you fill in an Username and a Password, these will function as the login details of your Oracle Database
 
 Class Information:
 -- Here you can fill in the namespace of your project
