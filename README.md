@@ -8,8 +8,7 @@ Class Directory:
 First you select a class directory, this will be the location where the generated classes with be located.
 
 Database Information:
-Connection:
-  You select an Ip Address and a Service Name, these will be the connection info to the Oracle Database
+  You fill in an Ip Address and a Service Name, these will be the connection info to the Oracle Database
 
 User:
   Here you fill in an Username and a Password, these will function as the login details of your Oracle Database
