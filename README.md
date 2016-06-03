@@ -14,7 +14,7 @@ User:
   Here you fill in an Username and a Password, these will function as the login details of your Oracle Database
 
 Class Information:
-Here you can fill in the namespace of your project
+Here you can fill in the namespace of your project.
    You can select a language (at the moment only C#) I want to add more languages  in the future
    Also you can select the type of properties you want:
    -Fields, the columns of your tables will be generated as fields
