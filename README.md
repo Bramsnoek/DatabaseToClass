@@ -18,7 +18,7 @@ Class Information:
 -- Here you can fill in the namespace of your project
    You can select a language (at the moment only C#) I want to add more languages  in the future
    Also you can select the type of properties you want:
-    -- Fields, the columns of your tables will be generated as fields
+   -- Fields, the columns of your tables will be generated as fields
        Properties, the columns of your tables will be generated as properties
        Full Properties. the columns of your tables will be generated as full properties
        SetValueProperties, you guys probably wont use this option, as I said before, this project was made as a personal project
