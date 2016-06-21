@@ -17,23 +17,39 @@ namespace OracleToCSharp
 
 		public override void Write(StreamWriter writer)
 		{
+			writer.Write(@"
+		#region Fields");
+			writer.Write(Environment.NewLine);
 			foreach (Tuple<string, string> property in Properties)
 			{
 				writer.Write
-				(@"
-		private " + property.Item2 + " " + property.Item1.ToLower() + @";
-				");
+			(@"
+		private " + property.Item2 + " " + property.Item1.ToLower() + @";");
+			}
+			writer.Write(Environment.NewLine);
+			writer.Write(Environment.NewLine);
+			writer.Write("		#endregion");
 
+			writer.Write(@"
+
+		#region Properties");
+			writer.Write(Environment.NewLine);
+			foreach (Tuple<string, string> property in Properties)
+			{
 				writer.Write(@"
 		public " + property.Item2 + " " + GetTitle(property.Item1) + @"
 		{
 			get { return " + property.Item1.ToLower() + @"; } 
 			set { SetField(this, ref " + property.Item1.ToLower() + @", value); }
-		}
-		");
+		}");
 			}
+			writer.Write(Environment.NewLine);
+			writer.Write(Environment.NewLine);
+			writer.Write("		#endregion");
 
+			writer.Write(@"
 
+		#region Constructor");
 			writer.Write
 				(@"
 
@@ -60,6 +76,9 @@ namespace OracleToCSharp
 
 			writer.Write(@"
 		}");
+			writer.Write(Environment.NewLine);
+			writer.Write(Environment.NewLine);
+			writer.Write("		#endregion");
 		}
 	}
 }
