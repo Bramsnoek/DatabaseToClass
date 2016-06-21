@@ -43,7 +43,7 @@ namespace OracleToCSharp
 			List<string> fileNames = new List<string>();
 
 			try {
-				foreach (DataRow row in OracleDb.SelectData(new OracleCommand(@"Select table_name from user_tables where table_name not like '%$%' and table_name not like '%LOGMNR%' and table_name not like '%SQLPLUS%' and table_name not like 'HELP' and table_name = 'POSTCODE'")).Rows)
+				foreach (DataRow row in OracleDb.SelectData(new OracleCommand(@"Select table_name from user_tables where table_name not like '%$%' and table_name not like '%LOGMNR%' and table_name not like '%SQLPLUS%' and table_name not like 'HELP'")).Rows)
 				{
 					ClassWriter writer = new ClassWriter(getPropertyWriter(row["TABLE_NAME"].ToString()), nameSpace, row["TABLE_NAME"].ToString());
 
